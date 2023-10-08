@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Oswald");
+
+
+@media (max-width: 840px){
+
+    h1{
+        font-size: 80px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+}
+
+
+body{
+    background-color: whitesmoke ;
+    font-family: 'Montserrat' ;
+    font-size: 125%;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    background-color: #ededed;
+}
+
+h1{
+    font-size: 80px;
+    display: flex;
+    justify-content: center;   
+}
+
+.img1{
+    clip-path: circle();
+    height: 260px;
+    width: 30vh;    
+}
+
+h2{
+    font-family: 'Oswald' ;
+
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    background-color: #ededed;
+
+}
+
+nav li {
+    text-decoration: none;
+    position: relative; 
+    display: inline;
+    justify-content: space-between;
+    margin: 15px;
+    width: 8%;
+}
+
+nav li::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #666666;
+    bottom: 15px;
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in;
+}
+
+nav li:hover::before {
+    transform-origin: center;
+    transform: scaleX(1);
+}
+
+.experiences{
+    background-color: rgb(234, 232, 230);
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.card{
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 30%;
+}
+
+.info{
+    height: 30px;
+    width:30px;
+
+}
+
+.info:hover +div{
+    display: block;
+}
+
+.card-image{
+    width: 90%;
+    box-shadow:10px 10px 5px rgba(0, 0, 0, 0.2) ;
+}
+
+article{
+    height: 15%;
+    border-radius: 8px;
+    margin:5px;
+    border-radius: 8px;
+
+}
+
+a{
+    width: 30%;
+}
+
+img{
+    width: 100%;
+
+}
+
+.section{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    align-items: center;
+}
+
+
+footer{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+}
+
